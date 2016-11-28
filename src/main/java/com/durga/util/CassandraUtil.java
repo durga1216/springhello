@@ -16,12 +16,12 @@ import org.springframework.data.cassandra.mapping.BasicCassandraMappingContext;
 import org.springframework.data.cassandra.mapping.CassandraMappingContext;
 
 @Configuration
-@PropertySource(value={"classpath:cassandra.properties"})
+@PropertySource(value={"classpath:/cassandra.properties"})
 public class CassandraUtil {
 	
 	private static final String KEYSPACE="cassandra.keyspace";
 	
-	private static final String CONTACTPOINTS="cassandra.contactpoints";
+	//private static final String CONTACTPOINTS="cassandra.contactpoints";
 	
 	private static final String PORT="cassandra.port";
 	
@@ -37,8 +37,9 @@ public class CassandraUtil {
     }
     
     private String getContactPoints() {
+    	String host=System.getenv("OPENSHIFT_INTERNAL_IP");
         return environment
-                .getProperty(CONTACTPOINTS);        
+                .getProperty(host);        
     }
     
     private int getPortNumber() {
