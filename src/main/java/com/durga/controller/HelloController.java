@@ -1,4 +1,4 @@
-package com.spring.controller;
+package com.durga.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

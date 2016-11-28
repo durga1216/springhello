@@ -14,6 +14,13 @@
 		</h2>
 		<h3>
 			<a href="welcome.html">Click here to See Welcome Message... </a>
+		</h3><br>
+		 <h3>
+			<a href="userDetail.html">Show User Details </a>
+		</h3>
+		<br><br>
+		<h3>
+		    <a href="add.html">Create New User</a>
 		</h3>
 	</div>
 </body>
