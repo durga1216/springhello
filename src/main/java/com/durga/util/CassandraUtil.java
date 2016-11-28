@@ -16,14 +16,14 @@ import org.springframework.data.cassandra.mapping.BasicCassandraMappingContext;
 import org.springframework.data.cassandra.mapping.CassandraMappingContext;
 
 @Configuration
-//@PropertySource(value={"classpath:cassandra.properties"})
+@PropertySource(value={"classpath:cassandra.properties"})
 public class CassandraUtil {
 	
-	private static final String KEYSPACE="springmap";
+	private static final String KEYSPACE="cassandra.keyspace";
 	
-	private static final String CONTACTPOINTS="localhost,127.0.0.1";
+	private static final String CONTACTPOINTS="cassandra.contactpoints";
 	
-	private static final String PORT="9042";
+	private static final String PORT="cassandra.port";
 	
 	@Autowired
 	private Environment environment;
