@@ -49,8 +49,8 @@ public class CassandraUtil {
 	@Bean
 	public CassandraClusterFactoryBean cluster(){
 		CassandraClusterFactoryBean cluster=new CassandraClusterFactoryBean();
-		//cluster.setContactPoints(getContactPoints());
-		//cluster.setPort(getPortNumber());
+		cluster.setContactPoints(getContactPoints());
+		cluster.setPort(getPortNumber());
 		return cluster;
 		
 	}
