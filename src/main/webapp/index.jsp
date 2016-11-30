@@ -10,7 +10,7 @@
 	<br>
 	<div style="text-align:center">
 		<h2>
-			Hey You..!! This is your 1st Spring MCV Tutorial..<br> <br>
+			Hello!! This is your 1st Spring MCV Tutorial..<br> <br>
 		</h2>
 		<h3>
 			<a href="welcome.html">Welcome to Cassandra... </a>
